@@ -1,6 +1,6 @@
 {
   "name": "newheights",
-  "version": "0.1",
+  "version": "0.1.2",
   "title": "NewHeights",
   "description": "jQuery plugin, for responsive pages, to set tags to same height.  Happens during/after browser resize.",
   "keywords": [

@@ -32,28 +32,30 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="newheights" class="anchor" href="#newheights"><span class="octicon octicon-link"></span></a>newheights</h1>
+<a name="newheights-jquery-plugin" class="anchor" href="#newheights-jquery-plugin"><span class="octicon octicon-link"></span></a>NewHeights jQuery Plugin</h1>
 
-<p>jQuery plugin to set tags to same height in responsive design.</p>
+<p>jQuery plugin, for responsive pages, to set tags to same height.  Happens during/after browser resize.</p>
 
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h2>
 
-<p>$(selector).newHeights(refresh = 500)</p>
+<pre><code>$(selector).newHeights(refresh = 500)
 
-<p>selector = any jQuery selector</p>
+selector = any jQuery selector or elements you want to be the same height
 
-<p>refresh = number (ms) for timer to continually resize - looks better
-            OR 'resize' only after browser resize
-            OR 'once' to resize only once</p>
+refresh = number (ms) for timer to continually resize - looks better
+        OR 'resize' only after browser resize
+        OR 'once' to resize only once
+</code></pre>
 
 <h2>
 <a name="what-it-does" class="anchor" href="#what-it-does"><span class="octicon octicon-link"></span></a>What it does:</h2>
 
-<p>1) Selects set of all elements that match <code>selector</code>
-  2) Calculates max_height of all elements in set
-  3) Sets height of all elements in set to max_height
-  4) Refreshes based on <code>refresh</code> parameter.</p>
+<pre><code>1) Selects set of all elements that match `selector`
+2) Calculates max_height of all elements in set
+3) Sets height of all elements in set to max_height
+4) Refreshes based on `refresh` parameter.
+</code></pre>
 
 <h2>
 <a name="example-syntax" class="anchor" href="#example-syntax"><span class="octicon octicon-link"></span></a>Example syntax:</h2>
@@ -70,7 +72,7 @@ $('#home .fancyBoxes .list .item h3').newHeights()
 $('#home .fancyBoxes .list .item .preface').newHeights('resize')
 </code></pre>
 
-<p>See below or example.html for examples.</p>
+<p>See below or <a href="http://htmlpreview.github.io/?https://github.com/MichaelJCole/newheights/blob/master/example.html">example.html</a> for examples.</p>
       </section>
     </div>
 

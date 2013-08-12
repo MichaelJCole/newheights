@@ -1,7 +1,7 @@
 newheights
 ==========
 
-jQuery plugin to set tags to same height in responsive design.
+jQuery plugin, for responsive pages, to set tags to same height.  Happens during/after browser resize.
 
 Usage:
 ------
@@ -34,5 +34,5 @@ Javascript:
     // Set all .preface tags in list to same height on browser resize
     $('#home .fancyBoxes .list .item .preface').newHeights('resize')
 
-See below or example.html for examples.
+See below or [example.html](http://htmlpreview.github.io/?https://github.com/MichaelJCole/newheights/blob/master/example.html) for examples.
 

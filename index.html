@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Newheights : jQuery plugin to set tags to same height in responsive design." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Newheights</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/MichaelJCole/newheights">View on GitHub</a>
+
+          <h1 id="project_title">Newheights</h1>
+          <h2 id="project_tagline">jQuery plugin to set tags to same height in responsive design.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/MichaelJCole/newheights/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/MichaelJCole/newheights/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="newheights" class="anchor" href="#newheights"><span class="octicon octicon-link"></span></a>newheights</h1>
+
+<p>jQuery plugin to set tags to same height in responsive design.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h2>
+
+<p>$(selector).newHeights(refresh = 500)</p>
+
+<p>selector = any jQuery selector</p>
+
+<p>refresh = number (ms) for timer to continually resize - looks better
+            OR 'resize' only after browser resize
+            OR 'once' to resize only once</p>
+
+<h2>
+<a name="what-it-does" class="anchor" href="#what-it-does"><span class="octicon octicon-link"></span></a>What it does:</h2>
+
+<p>1) Selects set of all elements that match <code>selector</code>
+  2) Calculates max_height of all elements in set
+  3) Sets height of all elements in set to max_height
+  4) Refreshes based on <code>refresh</code> parameter.</p>
+
+<h2>
+<a name="example-syntax" class="anchor" href="#example-syntax"><span class="octicon octicon-link"></span></a>Example syntax:</h2>
+
+<p>Coffeescript:</p>
+
+<pre><code># Set all h3's in list to same height.  Refresh every 500ms
+$('#home .fancyBoxes .list .item h3').newHeights()
+</code></pre>
+
+<p>Javascript:</p>
+
+<pre><code>// Set all .preface tags in list to same height on browser resize
+$('#home .fancyBoxes .list .item .preface').newHeights('resize')
+</code></pre>
+
+<p>See below or example.html for examples.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Newheights maintained by <a href="https://github.com/MichaelJCole">MichaelJCole</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

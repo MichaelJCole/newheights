@@ -30,26 +30,26 @@ h3         { font-size: 14px; }
 a          { color: #C2575B;  text-decoration: none; }
 a:hover    { color: #F76F76; }
 
-</style></head><body><h1>newheights</h1>
+</style></head><body><h1>NewHeights jQuery Plugin</h1>
 
 <p>jQuery plugin, for responsive pages, to set tags to same height.  Happens during/after browser resize.</p>
 
 <h2>Usage:</h2>
 
-<p>$(selector).newHeights(refresh = 500)</p>
+<pre><code>$(selector).newHeights(refresh = 500)
 
-<p>  selector = any jQuery selector</p>
+selector = any jQuery selector or elements you want to be the same height
 
-<p>  refresh = number (ms) for timer to continually resize - looks better
-            OR &#39;resize&#39; only after browser resize
-            OR &#39;once&#39; to resize only once</p>
+refresh = number (ms) for timer to continually resize - looks better
+        OR &#39;resize&#39; only after browser resize
+        OR &#39;once&#39; to resize only once</code></pre>
 
 <h2>What it does:</h2>
 
-<p>  1) Selects set of all elements that match <code>selector</code>
-  2) Calculates max<em>height of all elements in set
-  3) Sets height of all elements in set to max</em>height
-  4) Refreshes based on <code>refresh</code> parameter.</p>
+<pre><code>1) Selects set of all elements that match `selector`
+2) Calculates max_height of all elements in set
+3) Sets height of all elements in set to max_height
+4) Refreshes based on `refresh` parameter.</code></pre>
 
 <h2>Example syntax:</h2>
 

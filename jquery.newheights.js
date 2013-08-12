@@ -68,7 +68,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         _setMaxHeight(selector);
         if (typeof refresh === "number") {
           _loopMaxHeight(selector, refresh);
-        } else {
+        } else if (refresh === 'resize') {
           $(window).resize((function() {
             return _oneMaxHeight(selector);
           }));

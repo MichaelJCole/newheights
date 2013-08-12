@@ -1,6 +1,8 @@
 #!/bin/bash
-# To install coffee, sudo npm install -g coffee-script
+# To install tools:
+#   $ sudo npm install -g coffee-script jade markdown
 
 coffee -c jquery.newheights.coffee
+
 jade example.jade
 

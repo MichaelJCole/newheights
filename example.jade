@@ -1,22 +1,83 @@
 doctype 5
 html(lang="en")
   head
-    title= NewHeights jQuery Plugin Examples
+    title NewHeights jQuery Plugin Examples
+    // Include jQuery
     script(src='http://code.jquery.com/jquery.js')
-    script(src="/jquery.newheights.js)
+
+    // Include the NewHeights plugin
+    script(src='jquery.newheights.js')
+    // script(src='https://raw.github.com/MichaelJCole/newheights/master/jquery.newheights.js')
+
+    // Use the plugin
     script(type='text/javascript').
-      if (foo) {
-         bar(1 + 5)
+      $(document).ready(function () {
+
+        // number or default: Update every 500ms
+        $('#default span').newHeights(500);
+        // $('#default li').newHeights(); // same
+
+        // resize: Update 100ms after browser resize is complete
+        $('#resize span').newHeights('resize');
+
+        // once: Update just once.  On documentReady.  Refresh to resize.
+        $('#once span').newHeights('once');
+
+      })
+
+    // Style the examples
+    style(type='text/css').
+      .example {
+        margin: 1%;
+        background: #aaaaaa;
       }
+      span {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1%;
+        width: 29%;
+        padding: 1%;
+        background: #dddddd;
+      }
+
+    // Style this document
+    style(type='text/css').
+      body       { font-family: Verdana;  font-size: 13px;  background: #eee; }
+      h1, h2, h3 { font-size: 22px;  color: #464646; }
+      h2         { font-size: 18px; }
+      h3         { font-size: 14px; }
+      a          { color: #C2575B;  text-decoration: none; }
+      a:hover    { color: #F76F76; }
+
+
   body
-    h1 Jade - node template engine
-    #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.
+    include README.md
+
+    h2 Inline examples:
+
+    p View source to see the code and examples.  Resize your browser to see the effects.
+
+    h3 $('#default span').newHeights(500): Update every 500ms
+    #default.example
+      span Long content.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis nibh lacus, et convallis sem blandit commodo.
+      span Medium Content. Lorem ipsum dolor sit amet.
+      span Short content.
+
+
+    h3 $('#resize span').newHeights('resize'): Update after browser resize is complete
+    #resize.example
+      span Long content.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis nibh lacus, et convallis sem blandit commodo.
+      span Medium Content. Lorem ipsum dolor sit amet.
+      span Short content.
+
+
+    h3 $('#once span').newHeights('once'): Update just once.
+    p Refresh to resize on ready() or
+      input(type="button", value="click here", onclick="$('#once span').newHeights('once');")
+
+    #once.example
+      span Long content.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis nibh lacus, et convallis sem blandit commodo.
+      span Medium Content. Lorem ipsum dolor sit amet.
+      span Short content.
+
+

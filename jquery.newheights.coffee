@@ -79,13 +79,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       if typeof refresh is "number"
         # Method1: resize every refresh ms - this looks better.
         _loopMaxHeight selector, refresh
-        
-      elseif refresh = 'onResize'
+
+      else if refresh == 'resize'
         # Method2: on window resize, reset timer.  Resize happens 100ms after resize complete
         $(window).resize ( ->
           _oneMaxHeight selector
         )
-      # else do nothing
+      # else resized once above, do nothing
 
       @ # allow chaining
 ) this.jQuery or this.Zepto, this

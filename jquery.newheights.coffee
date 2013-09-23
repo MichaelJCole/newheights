@@ -1,5 +1,5 @@
 ###
-newheights.coffee v0.1
+newheights.coffee v0.1.3
 https://github.com/MichaelJCole/newheights
 
 The MIT License (MIT)
@@ -36,7 +36,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         # need 2+ elements
         if $(selector).length < 2
-          console.log selector + ": newHeights selector has less than 2 elements - quitting"
           # this can happen when 0 elements exist
           return
 
@@ -45,7 +44,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         # Calculate newMaxHeight
         $(selector).each (index, element) ->
-          #console.log $(element).height()
           newMaxHeight = Math.max $(element).height(), newMaxHeight
 
         # Set new heights

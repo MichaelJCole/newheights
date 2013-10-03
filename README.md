@@ -1,7 +1,7 @@
 NewHeights jQuery Plugin
 ======
 
-jQuery plugin, for responsive pages, to set tags to same height.  Happens during/after browser resize.
+jQuery plugin, for responsive pages, to set tags to same height.  Happens during/after browser resize.  See our [jQuery plugin page](http://plugins.jquery.com/newheights/)
 
 Usage:
 ------

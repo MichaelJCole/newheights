@@ -1,7 +1,7 @@
 # NewHeights jQuery Plugin
 
 <a target="_blank" href="https://expert.bigsmall.io/b/newheights-js/WmvjbG7SdvZWn9YLx/default">
-<img align="right" alt="NewHeights.js Experts. Get help right now." title="NewHeights.js Experts. Get help right now." src="//button.bigsmall.io/b/newheights-js/WmvjbG7SdvZWn9YLx/default">
+<img align="right" alt="NewHeights.js Experts. Get help right now." title="NewHeights.js Experts. Get help right now." src="https://button.bigsmall.io/b/newheights-js/WmvjbG7SdvZWn9YLx/default">
 </a>
 
 ## What it is:
